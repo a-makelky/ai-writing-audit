@@ -35,10 +35,13 @@ Generic ecosystem role statements; conservation padding when status unknown; uns
 additionally (sentence-initial), align with, crucial, delve, emphasizing, enduring, enhance, foster, garner, highlight (verb), interplay, intricate, key (adj), landscape (abstract), multifaceted, pivotal, realm, showcase, spearhead, tapestry (abstract), testament, transformative, underscore (verb), utilize, valuable, vibrant
 
 **[NOT-ONLY-BUT]**
-"Not only X, but Y"; "It's not just about X, it's about Y"; "However" pivots creating artificial balance
+"Not only X, but Y"; "It's not just about X, it's about Y"; "The takeaway isn't about X, it's about Y"; "It's about how you..."; "The key lesson here is"; "However" pivots creating artificial balance; "That's not X, it's Y" / "That's not a [noun]. It's a [noun]." / "[Noun] isn't X. It's Y." false-pivot contrasts where two separate claims get crammed into a single negation-affirmation pair; any line that steps outside the story to explain the story's point
 
 **[RULE-OF-3]**
-"Adjective, adjective, and adjective"; tripled phrases for false comprehensiveness
+"Adjective, adjective, and adjective"; tripled phrases for false comprehensiveness; three-beat staccato fragment sequences that manufacture rhythm (e.g., "Two models. Two reports. Same timeframe.")
+
+**[STACCATO]**
+Punchy sentence fragments stacked for copywriting cadence rather than conversational flow. If the source material uses connected, flowing phrasing, do not atomize it into clipped one-line beats (e.g., "Two models. Two reports. Same timeframe." when the speaker actually said "I got two reports from two different models in two different IDEs")
 
 **[VAGUE-ATTR]**
 "Experts argue," "Observers note," "Industry reports suggest," "Scholarship describes"—without named source
@@ -65,8 +68,8 @@ Boldface inside sentences for emphasis; "key takeaways" style bolding
 **[INLINE-LIST]**
 Vertical list items formatted as: **Bold header:** followed by description
 
-**[EM-DASH]**
-Em dash where comma, colon, or parentheses expected; multiple em-dash pairs per paragraph; em dashes for "punchy" parallelism
+**[EM-DASH]** [AGGRESSIVE — ALWAYS FLAG]
+Any em dash (—) or en dash (–) usage, regardless of context. Em dashes are a top-tier AI writing tell. Flag every single instance. No exceptions.
 
 **[CURLY-QUOTES]**
 "Curly" quotation marks or apostrophes ' instead of "straight" ones '
