@@ -50,6 +50,7 @@ Complete AUDIT fully before starting REWRITE. Do not skip phases.
 | `[SUPERFICIAL-ING]` | Remove -ing phrase or convert to separate sentence with substance. |
 | `[AI-LEX]` | Replace with plainer synonym or restructure sentence to eliminate the word. |
 | `[NOT-ONLY-BUT]` `[RULE-OF-3]` | Break parallelism; vary structure; state directly. |
+| `[METADISCOURSE]` | Delete the discourse frame. Replace it with the scene, quote, action, or direct factual claim the frame was pointing at. If no concrete claim remains, cut the sentence. |
 | `[STACCATO]` | Reconstruct into connected, conversational phrasing that matches the source material's natural rhythm. Combine fragments into a single flowing sentence. |
 | `[ELEGANT-VAR]` | Pick one term consistently, or use pronouns. |
 | `[VAGUE-ATTR]` `[WEASEL]` | Name source specifically, add quantifier, or delete claim. |

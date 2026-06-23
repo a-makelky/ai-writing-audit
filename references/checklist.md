@@ -37,6 +37,9 @@ additionally (sentence-initial), align with, crucial, delve, emphasizing, enduri
 **[NOT-ONLY-BUT]**
 "Not only X, but Y"; "It's not just about X, it's about Y"; "The takeaway isn't about X, it's about Y"; "It's about how you..."; "The key lesson here is"; "However" pivots creating artificial balance; "That's not X, it's Y" / "That's not a [noun]. It's a [noun]." / "[Noun] isn't X. It's Y." false-pivot contrasts where two separate claims get crammed into a single negation-affirmation pair; any line that steps outside the story to explain the story's point
 
+**[METADISCOURSE]**
+Discourse-level metadiscourse: the writer steps outside the scene, story, or argument to label its meaning instead of adding evidence. Common forms include deictic framing ("this," "that," "the part," "the thing") plus an interpretive predicate ("is the lesson," "is the point," "matters," "was not casual," "is what I tried to say," "stuck with me"). Flag when deleting the sentence leaves the surrounding concrete details intact, or when the sentence tells the reader how to interpret a moment instead of showing the moment. Examples: "That's the lesson." "That part was not casual." "That is probably predictable." "That is what I tried to say in the few seconds I had." Do not flag necessary technical signposting or a direct thesis sentence that adds new information.
+
 **[RULE-OF-3]**
 "Adjective, adjective, and adjective"; tripled phrases for false comprehensiveness; three-beat staccato fragment sequences that manufacture rhythm (e.g., "Two models. Two reports. Same timeframe.")
 
