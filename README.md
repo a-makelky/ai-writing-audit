@@ -7,16 +7,16 @@ A Claude skill that audits text for patterns commonly found in AI-generated writ
 This skill systematically audits text for **linguistic and structural patterns** that frequently appear in LLM-generated content, including:
 
 - Inflated language ("stands as," "serves as," "testament to")
-- AI-lexicon overuse ("delve," "landscape," "multifaceted," "leverage")
+- AI-lexicon overuse ("delve," "landscape," "multifaceted," "transformative")
 - Formulaic structures (not-only-but, rule-of-three parallelism)
 - Superficial qualifiers ("-ing" phrases tacked onto facts)
-- Structural tells (em-dash overuse, title case headings, inline bolding)
+- Structural tells (em/en dash usage, title case headings, inline bolding)
 - Communication artifacts (knowledge cutoff references, collaborative phrases)
 - Citation problems (vague attribution, malformed references)
 
 The skill provides:
 1. **Detailed audit** with tagged patterns and severity markers
-2. **Optional rewrite** that removes flagged patterns while preserving meaning
+2. **Corrected text** with flagged patterns removed while preserving meaning
 3. **Changelog** documenting each correction
 
 ## What This Does NOT Do
@@ -35,15 +35,17 @@ Use it to improve writing quality by removing formulaic patterns, not to determi
 
 ## Installation
 
-1. Download `ai-writing-audit.skill` from the [releases page](https://github.com/a-makelky/ai-writing-audit/releases)
+1. [Download the current `ai-writing-audit.skill` package](https://github.com/a-makelky/ai-writing-audit/releases/latest/download/ai-writing-audit.skill)
 2. In Claude (claude.ai), go to your account settings
 3. Upload the `.skill` file in the Skills section
 
+For Codex or another agent that supports folder-based skills, use the repository's `SKILL.md` and `references/` directory together.
+
 ## Usage
 
-### Basic Audit
+### Audit + Correction
 
-Simply provide text and ask Claude to audit it:
+Provide text and ask Claude to audit it:
 
 ```
 Audit this text for AI writing patterns:
@@ -51,7 +53,7 @@ Audit this text for AI writing patterns:
 [your text here]
 ```
 
-Claude will provide a detailed audit with tagged patterns like:
+Claude first returns a detailed audit with tagged patterns:
 
 ```
 ## AUDIT
@@ -64,17 +66,7 @@ Claude will provide a detailed audit with tagged patterns like:
 — END AUDIT: 12 issues found —
 ```
 
-### Audit + Rewrite
-
-To get corrected text after the audit:
-
-```
-Audit this text and provide a corrected version:
-
-[your text here]
-```
-
-You'll receive:
+When issues are found, you'll receive:
 - Complete audit with tagged issues
 - Corrected text with patterns removed
 - Changelog of all changes made
@@ -97,7 +89,7 @@ The skill checks for patterns across multiple categories:
 
 **Structural Tells**
 - Formatting patterns (title case, inline bold)
-- Em-dash overuse
+- Em/en dash usage
 - Markdown/formatting artifacts
 
 **Communication Artifacts**
