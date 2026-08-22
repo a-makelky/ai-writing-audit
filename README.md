@@ -13,11 +13,14 @@ This skill systematically audits text for **linguistic and structural patterns**
 - Structural tells (em/en dash usage, title case headings, inline bolding)
 - Communication artifacts (knowledge cutoff references, collaborative phrases)
 - Citation problems (vague attribution, malformed references)
+- Abstract metaphor nouns ("flywheel," "north star," "scaffolding")
+- Portable sentences that could appear in any other post or project's docs
 
 The skill provides:
 1. **Detailed audit** with tagged patterns and severity markers
 2. **Corrected text** with flagged patterns removed while preserving meaning
 3. **Changelog** documenting each correction
+4. **Voice check** so a clean audit does not leave sterile, voiceless prose
 
 ## What This Does NOT Do
 
@@ -80,12 +83,14 @@ The skill checks for patterns across multiple categories:
 - Promotional tone
 - Superficial qualifiers
 - Generic future outlook sections
+- Portable prose (sentences that could appear in anyone else's post)
 
 **Language Tells**
 - AI-lexicon overuse (40+ flagged terms)
 - Formulaic structures
 - Elegant variation
 - Vague attribution
+- Abstract metaphor nouns (flywheel, north star, scaffolding, substrate)
 
 **Structural Tells**
 - Formatting patterns (title case, inline bold)

@@ -7,11 +7,11 @@ description: Audit and correct text to remove signs of AI-generated writing. Use
 
 Identify and remove patterns that signal AI-generated text, based on Wikipedia's "Signs of AI Writing" detection guide.
 
-When the /audit command is entered into a chat, run the two-phase workflow below.
+When the /audit command is entered into a chat, run the three-phase workflow below.
 
-## Two-Phase Workflow
+## Three-Phase Workflow
 
-Complete AUDIT fully before starting REWRITE. Do not skip phases.
+Complete AUDIT fully before starting REWRITE. Complete REWRITE before the voice pass. Do not skip phases.
 
 ### Phase 1: Audit
 
@@ -59,6 +59,24 @@ Complete AUDIT fully before starting REWRITE. Do not skip phases.
 | `[INLINE-BOLD]` `[INLINE-LIST]` `[TITLE-CASE]` | Remove excess formatting; sentence case for headings. |
 | `[DIRECT-ADDRESS]` `[COLLAB]` `[LETTER-FORMAT]` `[REFUSAL]` `[KNOWLEDGE-CUTOFF]` | Delete entirely. |
 | `[OAICITE]` `[MARKDOWN]` `[PLACEHOLDER]` `[REF-BUG]` | Remove artifacts; fix or flag citations for human review. |
+| `[ABSTRACT-METAPHOR]` | Replace the metaphor noun with the concrete thing it stands for. "flywheel" becomes the actual loop. "north star" becomes the real goal. "scaffolding" becomes the real support (docs, tests, a template). If no concrete referent exists, cut the sentence. |
+| `[PORTABLE-PROSE]` | Cut or rewrite until the sentence names something specific to this draft. If it could appear unchanged in another creator's post or another project's docs, it stays flagged. |
+
+### Phase 3: Voice pass
+
+Removing patterns is half the job. Sterile, voiceless writing is still slop.
+
+After the tagged rewrite, run this pass on the corrected text. Do not add claims, citations, metaphors, or details that were not in the source.
+
+If `references/voice.md` exists, follow it. That file is the author's voice overlay and wins over the generic rules below. If it does not exist, use these rules:
+
+1. Restore opinions that were already in the source. Do not invent new ones.
+2. Vary rhythm. Mix sentence lengths. Do not stack fragments; that is `[STACCATO]`.
+3. Keep first person if the source used it.
+4. Keep mess that was in the source: failures, honest hedges, raw phrasing, profanity.
+5. Prefer names, tools, numbers, and quotes over abstract summary.
+6. Ask: could this sentence appear unchanged in someone else's post? If yes, it is still `[PORTABLE-PROSE]`.
+7. Do not add a line that explains the point of the story.
 
 ## Output Format
 
@@ -80,6 +98,10 @@ Complete AUDIT fully before starting REWRITE. Do not skip phases.
 - Line/section: brief description of change
 - Line/section: brief description of change
 ...
+
+## VOICE CHECK
+
+[Notes on remaining voice problems, or "Passes"]
 ```
 
 CHANGELOG: one terse line per fix, referencing original snippet or location.
@@ -87,3 +109,4 @@ CHANGELOG: one terse line per fix, referencing original snippet or location.
 ## References
 
 - `references/checklist.md` — AI detection tags and patterns
+- `references/voice.md` — optional author voice overlay (used in Phase 3 when present)
