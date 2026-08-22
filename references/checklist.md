@@ -27,6 +27,9 @@ Present participle phrase tacked onto fact: "...ensuring," "...reflecting its im
 **[ECO-FILLER]**
 Generic ecosystem role statements; conservation padding when status unknown; unsubstantiated preservation claims
 
+**[PORTABLE-PROSE]**
+A sentence that could appear unchanged in another creator's post or another project's docs. It names a feeling, a category, or a generic benefit instead of a fact from this draft. Examples: "This is where the real leverage is." "The workflow just works." "SQL you can read." "Types that follow your schema." Flag when you cannot restate the sentence as a concrete instruction, named tool, number, quote, or incident from the source. If deleting it loses no specific information, cut it.
+
 ---
 
 ## Language Tells
@@ -57,6 +60,9 @@ Same entity called by 3+ synonyms in close proximity to avoid repetition (e.g., 
 
 **[FALSE-RANGE]**
 "From X to Y" where X and Y aren't on coherent scale; meaningless figurative ranges
+
+**[ABSTRACT-METAPHOR]**
+Technical-sounding metaphor nouns that usually have a plainer concrete word. Flag when used as a metaphor, not when they are the literal thing (a physical scaffold, a math vector, a horse harness). Common tells: substrate, wedge, vector, locus, vantage, nexus, primitive (as noun), harness (as metaphor), surface (as in "API surface" with no named API), bedrock, scaffolding (as metaphor), modality, paradigm, gold-plating, ratchet (as metaphor), evacuate (for moving code), endgame, north star, flywheel. "Substrate" becomes "base." "Wedge in" becomes "add." "Vector" becomes "way" or "method." "Gold-plating" becomes "more than the job needs." "Ratchet" becomes the mechanism's real name. "Evacuate" becomes "move out." "Endgame" becomes "the last phase." "Flywheel" becomes the actual repeatable loop. "North star" becomes the real goal.
 
 ---
 
