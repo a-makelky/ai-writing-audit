@@ -50,7 +50,7 @@ Complete AUDIT fully before starting REWRITE. Complete REWRITE before the voice 
 | `[SUPERFICIAL-ING]` | Remove -ing phrase or convert to separate sentence with substance. |
 | `[AI-LEX]` | Replace with plainer synonym or restructure sentence to eliminate the word. |
 | `[NOT-ONLY-BUT]` `[RULE-OF-3]` | Break parallelism; vary structure; state directly. |
-| `[METADISCOURSE]` | Delete the discourse frame. Replace it with the scene, quote, action, or direct factual claim the frame was pointing at. If no concrete claim remains, cut the sentence. |
+| `[METADISCOURSE]` | Delete the discourse frame. Replace it with the scene, quote, action, or a direct factual claim the frame was pointing at. If no concrete claim remains, cut the sentence. |
 | `[STACCATO]` | Reconstruct into connected, conversational phrasing that matches the source material's natural rhythm. Combine fragments into a single flowing sentence. |
 | `[ELEGANT-VAR]` | Pick one term consistently, or use pronouns. |
 | `[VAGUE-ATTR]` `[WEASEL]` | Name source specifically, add quantifier, or delete claim. |
@@ -68,7 +68,7 @@ Removing patterns is half the job. Sterile, voiceless writing is still slop.
 
 After the tagged rewrite, run this pass on the corrected text. Do not add claims, citations, metaphors, or details that were not in the source.
 
-If `references/voice.md` exists, follow it. That file is the author's voice overlay and wins over the generic rules below. If it does not exist, use these rules:
+If a `references/voice.md` overlay exists, follow it. It wins over the generic rules below. If no voice overlay is present, use these rules:
 
 1. Restore opinions that were already in the source. Do not invent new ones.
 2. Vary rhythm. Mix sentence lengths. Do not stack fragments; that is `[STACCATO]`.
