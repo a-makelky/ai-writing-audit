@@ -16,7 +16,7 @@ Complete AUDIT fully before starting REWRITE. Complete REWRITE before the voice 
 ### Phase 1: Audit
 
 1. Read draft once, slowly.
-2. Work through checklist in `references/checklist.md` in exact order.
+2. Work through checklist in `references/checklist.md` in exact order. Then run the sweep described under `[METADISCOURSE]`: apply the delete test to every sentence and search for the listed shapes. A clean checklist run is not a clean draft.
 3. For each offense:
    - Quote shortest offending snippet (≤12 words)
    - Append all applicable `[TAGS]`
@@ -50,7 +50,7 @@ Complete AUDIT fully before starting REWRITE. Complete REWRITE before the voice 
 | `[SUPERFICIAL-ING]` | Remove -ing phrase or convert to separate sentence with substance. |
 | `[AI-LEX]` | Replace with plainer synonym or restructure sentence to eliminate the word. |
 | `[NOT-ONLY-BUT]` `[RULE-OF-3]` | Break parallelism; vary structure; state directly. |
-| `[METADISCOURSE]` | Delete the discourse frame. Replace it with the scene, quote, action, or a direct factual claim the frame was pointing at. If no concrete claim remains, cut the sentence. |
+| `[METADISCOURSE]` | Delete the discourse frame. Keep only a scene, quote, action, or factual claim that the frame was pointing at and that is not already stated nearby. Never replace it with another line that explains the point or praises the subject; that is the same hit reworded. If no concrete claim remains, cut the sentence. |
 | `[STACCATO]` | Reconstruct into connected, conversational phrasing that matches the source material's natural rhythm. Combine fragments into a single flowing sentence. |
 | `[ELEGANT-VAR]` | Pick one term consistently, or use pronouns. |
 | `[VAGUE-ATTR]` `[WEASEL]` | Name source specifically, add quantifier, or delete claim. |
