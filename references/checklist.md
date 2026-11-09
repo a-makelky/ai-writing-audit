@@ -59,6 +59,14 @@ Punchy sentence fragments stacked for copywriting cadence rather than conversati
 **[WEASEL]**
 "some," "many," "various," "several" without quantifier or citation when specificity expected
 
+**[PRESENT-PASSIVE]**
+
+Agentless drama: a sentence that claims an event, a conflict, or a cause while deleting the actor, or replacing the actor with an abstraction, and letting a vague verb carry the weight. "They were shouted over from the first slide." states a conflict and names nobody doing anything. "Months of headlines about data centers draining aquifers and spiking bills did that work before anyone walked in." makes an abstraction the subject and "did that work" the whole mechanism. The sentence stages a scene instead of reporting one. Test: ask who did what, specifically. If the sentence cannot answer, and the surrounding text does not answer either, flag it.
+
+Common shapes: passive verb with no agent where the agent is the story ("was met with resistance," "concerns were raised," "the plan was criticized"); abstract subject plus placeholder verb ("did the work," "did the heavy lifting," "set the stage," "set the tone," "paved the way," "hung over the room," "changed the conversation"); causation claimed across a gap with no mechanism named.
+
+Not this: a passive where the actor is genuinely unknown ("the window was broken overnight"), irrelevant, or named in the same sentence or the one before it; technical and legal passives where the patient is the topic ("the sample was heated to 90 degrees"). Not [VAGUE-ATTR], which covers unnamed sources for claims; this tag covers unnamed actors for events. Not [METADISCOURSE], which explains the point of a scene; this stages a scene that was never reported.
+
 **[ELEGANT-VAR]**
 Same entity called by 3+ synonyms in close proximity to avoid repetition (e.g., "the company," "the firm," "the organization," "the enterprise")
 
