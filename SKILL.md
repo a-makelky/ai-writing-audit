@@ -54,6 +54,7 @@ Complete AUDIT fully before starting REWRITE. Complete REWRITE before the voice 
 | `[STACCATO]` | Reconstruct into connected, conversational phrasing that matches the source material's natural rhythm. Combine fragments into a single flowing sentence. |
 | `[ELEGANT-VAR]` | Pick one term consistently, or use pronouns. |
 | `[VAGUE-ATTR]` `[WEASEL]` | Name source specifically, add quantifier, or delete claim. |
+| `[PRESENT-PASSIVE]` | Name the actor and the act, from the source material only. If the source names no actor, downgrade the sentence to what was actually observed, or cut it. Never invent an actor to fill the gap. |
 | `[CHALLENGES-FUTURE]` | Restructure or cut; do not preserve the formula. |
 | `[EM-DASH]` | Remove entirely. Restructure the sentence to eliminate the need for any dash. Split into two sentences, use a comma, use a colon, or rewrite. Never preserve an em dash or en dash in the corrected text. |
 | `[INLINE-BOLD]` `[INLINE-LIST]` `[TITLE-CASE]` | Remove excess formatting; sentence case for headings. |
